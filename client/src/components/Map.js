@@ -40,7 +40,7 @@ const Map = ({ classes }) => {
         width="100vw"
         height="calc(100vh - 64px)"
         mapStyle="mapbox://styles/mapbox/streets-v11"
-        mapboxApiAccessToken="pk.eyJ1IjoiZWR1YXJkb2pjIiwiYSI6ImNrcW55djFhMzBtOXEyc280bzV4ZWdscmMifQ.bSk2AxRmrLd5UiIXSbFS7A"
+        mapboxApiAccessToken={process.env.REACT_APP_MAP_KEY}
         onViewportChange={(newViewport) => setViewport(newViewport)}
         {...viewport}
       >
